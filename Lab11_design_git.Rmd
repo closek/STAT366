@@ -59,6 +59,10 @@ pkgs_needed = c("survey","ggplot2","tibble","pwr","RNASeqPower")
 letsinstall = setdiff(pkgs_needed, installed.packages()) 
 if (length(letsinstall) > 0) {
   source("http://bioconductor.org/biocLite.R")
+  
+  
+  
+  
   biocLite(letsinstall)
 }
 ```
