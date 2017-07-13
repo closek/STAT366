@@ -1,8 +1,10 @@
 ---
 title: 'Lab 11: Experimental Design and git'
 author: "Bios221"
-date: "2017-07-13"
-output: html_document
+date: '2017-07-13'
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -167,7 +169,7 @@ mean_errors2 = mean(apply(errors2,1,var))
 mean_errors2
 mean_errors1/mean_errors2
 ```
-```{r bootstrapHotelling}
+```{r bootstrapHotelling2}
 log10(mean_errors1)
 log10(mean_errors2)
 ```
