@@ -59,10 +59,6 @@ pkgs_needed = c("survey","ggplot2","tibble","pwr","RNASeqPower")
 letsinstall = setdiff(pkgs_needed, installed.packages()) 
 if (length(letsinstall) > 0) {
   source("http://bioconductor.org/biocLite.R")
-  
-  
-  
-  
   biocLite(letsinstall)
 }
 ```
@@ -170,6 +166,10 @@ mean_errors1
 mean_errors2 = mean(apply(errors2,1,var))
 mean_errors2
 mean_errors1/mean_errors2
+```
+```{r bootstrapHotelling}
+log10(mean_errors1)
+log10(mean_errors2)
 ```
 
 **Question**: Can you plot the error ratio distribution? Hint: Take `log10` of the ratios.
